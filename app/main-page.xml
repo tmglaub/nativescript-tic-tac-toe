@@ -1,0 +1,42 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Home">
+    </ActionBar>
+    <ScrollView class="view">
+        <StackLayout class="home-panel">
+            <Label text="Spieler X ist in der Reihe!" textAlignment="center"
+                color="blue" id="Info" />
+            <GridLayout class="grid" rows="*,*,*" columns="*,*,*" id="grid"
+                marginTop="20">
+                <Button class="card-btn" text="" id="1" row="0" col="0"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="2" row="1" col="0"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="3" row="2" col="0"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="4" row="0" col="1"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="5" row="1" col="1"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="6" row="2" col="1"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="7" row="0" col="2"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="8" row="1" col="2"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+                <Button class="card-btn" text="" id="9" row="2" col="2"
+                    height="33%" width="33%" borderWidth="1"
+                    tap="{{onButtonTap}}" />
+            </GridLayout>
+            <Button class="restart-btn" text="Neustarten" marginTop="20"
+                tap="{{onReset}}" />
+        </StackLayout>
+    </ScrollView>
+</Page>
